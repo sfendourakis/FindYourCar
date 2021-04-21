@@ -1,8 +1,10 @@
 import pandas as pd
 import Database
+from dotenv import load_dotenv
+load_dotenv()
+import os
 
-
-database = r"C:\sqlite\db\pythonsqlite.db"
+database = os.getenv("DATABASE_DIR")
 dataset = pd.read_csv('cars.csv')
 
 
