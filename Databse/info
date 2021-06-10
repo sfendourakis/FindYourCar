@@ -1,0 +1,5 @@
+CREATE TABLE INFO(
+  info_id INTEGER PRIMARY KEY, 
+  info TEXT,
+  FOREIGN KEY(info_id) REFERENCES users(user_id)
+);
