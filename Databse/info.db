@@ -3,3 +3,19 @@ CREATE TABLE INFO(
   info TEXT,
   FOREIGN KEY(info_id) REFERENCES users(user_id)
 );
+
+CREATE TABLE IF NOT EXISTS CARS (
+                                        car_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+                                        model text NOT NULL,
+                                        year text NOT NULL,
+                                        engine_fuel_type text NOT NULL,
+                                        engine_hp text NOT NULL,
+                                        engine_cylinders text NOT NULL,
+                                        transmission_type text NOT NULL,
+                                        driven_wheels text NOT NULL,
+                                        number_of_doors text NOT NULL,
+                                        market_category text NOT NULL,
+                                        vehicle_size text NOT NULL,
+                                        vehicle_style text NOT NULL,
+                                        images BLOB NOT NULL
+                                    );
