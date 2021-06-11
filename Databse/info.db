@@ -1,3 +1,11 @@
+create_users = """CREATE TABLE IF NOT EXISTS USERS (
+                                        user_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+                                        user_name text NOT NULL,
+                                        user_password text NOT NULL,
+                                        email text,
+                                        role text NOT NULL
+                                    );
+
 CREATE TABLE INFO(
   info_id INTEGER PRIMARY KEY, 
   info TEXT,
